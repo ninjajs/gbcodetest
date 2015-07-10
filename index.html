@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Test</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="main">
+    <input id="search" type="text" placeholder="Search..." autocomplete='off' />
+    <ul id="search-results"></ul>
+  </div>
+
+  <script id="results-template" type="text/x-handlebars-template">
+
+    {{#each items}}
+      <li>
+        <a href="{{html_url}}" target="_blank">
+          <h4>{{name}}</h4>
+          <div class="description">
+            {{description}}
+          </div>
+        </a>
+      </li>
+    {{else}}
+      <li>No results</li>
+    {{/each}}
+  </script>
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

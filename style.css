@@ -1,0 +1,58 @@
+
+html {
+  font-family:arial;
+}
+
+body {
+  text-align:center;
+}
+
+#main {
+  position:relative;
+  width:500px;
+  margin:0 auto;
+}
+
+#search {
+  width:100%;
+  padding:10px;
+  font-size:14px;
+  border-radius:5px;
+  border:1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#search-results {
+  display:none;
+  width:100%;
+  border:1px solid #ccc;
+  box-shadow: 1px 1px 5px 0px rgba(153,153,153,1);
+  position:absolute;
+  top:25px;
+  left:0;
+  list-style:none;
+  padding:0;
+  max-height:300px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+#search-results li {
+  padding:10px;
+  margin:0;
+  text-align:left;
+  border-bottom:1px solid #ccc;
+}
+
+#search-results li a {
+  text-decoration:none;
+}
+
+#search-results li h4 {
+  margin:0;
+  color:black;
+}
+
+#search-results li .description {
+  color:#666666;
+}
